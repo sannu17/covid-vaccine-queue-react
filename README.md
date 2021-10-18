@@ -1,5 +1,11 @@
-# Getting Started with Create React App
+# About The Application
+This project is covid-19 vaccination queuing application, suppose we are going to some hospital or any other vaccination center then we fill in the form and have to wait for our turn beign in a queue.
 
+Suppose there are already 4 people and I am the 5th one then I will be added in the que using application and when I get my vaccination responsible person will click on the checkbox near my name and the status will be done for me.
+### `clone repo_url`
+### `npm install`
+
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -13,6 +19,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+# Steps to Operate the application
+once user does `npm start` application will be started and there we can enter new name for the person who came for vaccination. 
+After the vaccination is over for that person we can just click on the checkbox before name and the checkbox will be marked.
+Like this we can track if vaccination for all the person is over or not.
 
 ### `npm test`
 
