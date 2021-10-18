@@ -3,8 +3,14 @@ import React from 'react';
 
 function TodoList({tasks, createTask, toggleCompleted}) {
     const [errorMessage, setErrorMessage] = React.useState('')
+    const [id, setId] = React.useState('')
     const task = React.useRef();
     const uniqueId = React.useRef();
+
+    const handleIdChange = (event) => {
+        setId(event.target.value)
+        setErrorMessage('')
+    }
     const handleTodoListSubmit = (event) => {
         event.preventDefault()
         const idExist = tasks.filter(el => el.uniqueId === uniqueId.current.value)
@@ -40,6 +46,8 @@ function TodoList({tasks, createTask, toggleCompleted}) {
                     className="form-control"
                     placeholder="Add Unique Id..."
                     style={{marginBottom:'15px'}}
+                    value={id}
+                    onChange={(event) => handleIdChange(event)}
                     required 
                 />
                 <p style={{color:'red'}}>{errorMessage}</p>
